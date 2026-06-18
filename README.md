@@ -4,4 +4,4 @@ This is a static AI HR platform demo. It can be deployed directly with GitHub Pa
 
 ## Deploy
 
-Push this repository to GitHub. The included GitHub Actions workflow publishes the site to GitHub Pages automatically.
+GitHub Pages is configured to publish from the `main` branch root.
