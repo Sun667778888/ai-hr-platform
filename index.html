@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR智能工作台</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="recruiting-data.js"></script>
+    <script defer src="employee-service-data.js"></script>
+    <script defer src="compensation-anonymous-data.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <div class="brand">
+          <span class="brand-mark">HR</span>
+          <div>
+            <strong>智能人力平台</strong>
+            <span>效率 · 服务 · 发展 · 决策</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" id="mainNav"></nav>
+
+        <section class="side-panel">
+          <span class="section-label">今日概览</span>
+          <div class="mini-stat">
+            <span>待处理资料</span>
+            <strong>18</strong>
+          </div>
+          <div class="mini-stat">
+            <span>AI已响应</span>
+            <strong>246</strong>
+          </div>
+          <div class="mini-stat">
+            <span>本周节省工时</span>
+            <strong>42h</strong>
+          </div>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <span class="eyebrow">HR AI Workspace</span>
+            <h1 id="pageTitle">首页</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" id="homeButton" title="返回首页" aria-label="返回首页">
+              <i data-lucide="home"></i>
+            </button>
+            <button class="secondary-button" id="globalUploadButton">
+              <i data-lucide="upload-cloud"></i>
+              资料更新
+            </button>
+          </div>
+        </header>
+
+        <section class="view" id="viewRoot" aria-live="polite"></section>
+      </main>
+    </div>
+  </body>
+</html>
